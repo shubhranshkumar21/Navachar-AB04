@@ -1,1 +1,139 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armory</title>
+    <link rel="stylesheet" href="styles.css">
+    <!DOCTYPE html>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/css/images/fav-icon.png"/>
+    <script src="https://kit.fontawesome.com/0eedbf6c6d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/0eedbf6c6d.js" crossorigin="anonymous"></script>
+        <style>
+            * {
+                font-family: Poppins, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body{
+                margin:0px;
+                padding: 0px;
+                font-family: poppins;
+                background: linear-gradient(to right, rgb(82, 12, 12), black, black, rgb(82, 12, 12));
+            }       
+    
+            h1 {
+                text-align: center;
+                margin: 20px 0;
+                font-family:'Marcellus SC', serif;
+                font-size: 4rem;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                letter-spacing: 5px;
+                color: #ff4d00;
+            }
+    
+            h2 {
+                text-align: center;
+                margin: 20px 0;
+                font-family:'Marcellus SC', serif;
+                font-size: 2.4rem;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+                letter-spacing: 5px;
+                color: #800000;
+            }
+    
+            #armory {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 30px;
+                max-width: 1000px;
+                margin: 50px auto;
+            }
+    
+            .armory-box {
+                width: 100%;
+                border: 2px solid #303030;
+                background-color: #2d2828;
+                padding: 27px;
+                border-radius: 20px; 
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+    
+            .armory-box img {
+                width: 100%;
+                height: 200px;
+                border-radius: 8px;
+                object-position: center;
+                margin: 3px auto;
+            }
+    
+            .armory-box span {
+                color: #ffb700;
+                font-size: 1.2rem;
+                margin-top: 5px;
+                letter-spacing: 0.3px;
+                font-weight: 600;
+                font-family:'Marcellus SC', serif;
+                text-shadow: 2px 2px 3px rgba(64, 28, 7, 0.542);
+            }
+    
+            .armory-box p {
+                color: #8e6600;
+                font-size: 1.15rem;
+                margin: 5px 0px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+    
+            .armory-box:hover {
+                transform: scale(1.1);
+                transition: all ease 0.1s;
+            }
+    
+            button {
+                width: 100%;
+                height: 40px;
+                background-color: #900000;
+                color: #898989;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                transition: all ease 0.3s;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 570;
+                border-radius: 4px;
+                font-size: 1.15rem;
+                letter-spacing: 0.5px;
+            }
+    
+            button:hover {
+                background-color: #d21e1e;
+            }
+    
+            .cart {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background-color: gold;
+                color: black;
+                padding: 10px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+    
+            .cart span {
+                margin-left: 5px;
+            }
+        </style>

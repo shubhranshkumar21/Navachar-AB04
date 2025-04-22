@@ -98,8 +98,131 @@
             color: black;
             cursor: pointer;
         }
-                input[type="submit"]:hover {
+
+        input[type="submit"]:hover {
             background-color: #a19a28; 
         }
 
     </style>
+</head>
+<body>
+    <h1>The Mauryan Empire</h1>
+    <h3>
+    <b>Year 8 of the Reign of Chakravarthy Ashoka</b>
+    </h3>    
+    <p>
+        <br>
+        <i>Let it be known across the expanse of Jambudvipa, from the snow-covered peaks of the Himalayas 
+        to the coastal lands kissed by the Great Southern Waters, that the Mauryan Empire stands 
+        in its full glory — vast, wise, and just under the benevolent eye of Emperor Ashoka, the Beloved of the Gods.</i>
+    </p>
+    <p>
+        <i>Our lineage springs from Chandragupta Maurya, founder of this mighty realm, who with the guidance of the wise Chanakya, 
+        cast off foreign yoke and forged unity among the Mahajanapadas. 
+        In his valor, he laid the first stone of empire, upon which now rises a dominion 
+        bound not by chains, but by Dharma and righteous order.</i>
+        <br>
+    </p>
+    <p>
+        <i>Bindusara, son of Chandragupta and father to Ashoka, expanded the borders with firmness and vision, 
+        ensuring the Mauryan name echoed in every court and market across Aryavarta and beyond.</i>
+        <br>
+    </p>
+    <p>
+        <i>Now in these blessed times, His Majesty Ashoka rules not merely by sword, but by the law of compassion. Since the conquest of Kalinga — a battle that shook the 
+        soul of our sovereign — he has renounced bloodshed and taken up the banner of Dharma. 
+        Pillars of stone and caves carved with his edicts proclaim his message to man and beast alike: live rightly, 
+        treat all with kindness, uphold truth.</i>
+        <br>
+    </p>
+    <p>
+        <i>Our roads stretch like veins across the land, bringing trade, wisdom, and pilgrims to the farthest provinces. The royal post rides swift as the wind. 
+        Physicians are dispatched, shade trees are planted, wells dug — for His Majesty cares for all his subjects, two-legged and four.
+        <br></i>
+    </p>
+    <p>
+        <i>O people of the Mauryan soil — artisans, scholars, warriors, monks — take pride in the empire you shape with your hands and hearts. Let our children's children remember this 
+        golden age as one where Dharma prevailed, and a man called Ashoka chose peace over conquest, yet ruled an empire unmatched in size, spirit, and wisdom.
+        <br></i>
+    </p>
+    
+    <h4>
+       <br><b><i>May the wheel of Dharma ever turn.</i></b>
+    </h4>
+    
+
+    <!-- Armory access -->
+    <div id="login-section">
+        <h2>Long live the Sammrat.</h2>
+        <input type="email" id="email-input" placeholder="Enter your email"/>
+        <input type="submit" value="Login" id="login-button"/>
+        <p id="login-message"></p>
+    </div>
+
+    <style>
+        #login-section {
+            text-align: center;
+            margin: 40px;
+        }
+    
+        input[type="email"] {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            background-color: black;
+            color: gold;
+        }
+    
+        input[type="submit"] {
+            padding: 10px 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            background-color: rgb(255, 0, 0);
+            color: black;
+            cursor: pointer;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            background-color:black;
+            border: none;
+            box-shadow:0 0 5px gold;
+        }
+    
+        input[type="submit"]:hover {
+            background-color: #ff5151;
+            transition: all ease 0.3s;
+        }
+    
+        #login-message {
+            color: #8B0000;
+            text-align: left;
+            margin-top: 10px;
+            font-family:'Marcellus SC', serif;
+            font-weight: 600;
+            font-size: 1.7rem;
+            margin-left: 630px;
+        }
+    </style>
+
+    <script>
+        const validEmails = ["mauryansammrat@gmail.com", "mauryansenapati@gmail.com"];
+        const loginButton = document.getElementById('login-button');
+        const emailInput = document.getElementById('email-input');
+        const loginMessage = document.getElementById('login-message');
+
+        loginButton.addEventListener('click', function() {
+            const email = emailInput.value;
+            if (validEmails.includes(email)) {
+                window.location.href = 'armory.html'; 
+            } else {
+                loginMessage.textContent = 'Invalid email. Access denied. EXIT IMMEDIATELY.';
+            }
+        });
+    </script>
+</body>
+</html>

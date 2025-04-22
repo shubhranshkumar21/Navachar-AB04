@@ -137,3 +137,67 @@
                 margin-left: 5px;
             }
         </style>
+    </head>
+    <body>
+        <h1>Armory</h1>
+    
+        <div class="cart" id="cartCountContainer">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cartCount">0</span>
+        </div>
+    
+        <div id="armory">
+            <div class="armory-box">
+                <img src="css/images/sword.jpg" alt="Sword">
+                <span>Khanda Sword</span>
+                <p>Made with forged iron blade.</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+    
+            <div class="armory-box">
+                <img src="css/images/Khanjar.jpg" alt="Khanjar">
+                <span>Mauryan Khanjar</span>
+                <p>Made to stab the backstabbers</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+    
+            <div class="armory-box">
+                <img src="css/images/Katara.jpg" alt="Katara">
+                <span>Mauryan Katara</span>
+                <p>Used to Punch enemies</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+    
+            <div class="armory-box">
+                <img src="css/images/Chakram.jpg" alt="Chakram">
+                <span>Mauryan Chakram</span>
+                <p>Slices enemie's heads</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+    
+            <div class="armory-box">
+                <img src="css/images/Axe.jpg" alt="Axe">
+                <span>Mauryan Axe</span>
+                <p>Sends the enemies flying</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+    
+            <div class="armory-box">
+                <img src="css/images/Armor.jpg" alt="Armor">
+                <span>Mauryan Armor</span>
+                <p>To Protect those who protect us</p>
+                <button onclick="addToCart()">Add to Cart</button>
+            </div>
+        </div>
+        <h2>JAI MAGADHA.</h2>
+    
+        <script>
+            let cartCount = 0;
+    
+            function addToCart() {
+                cartCount++;
+                document.getElementById('cartCount').innerText = cartCount;
+            }
+        </script>
+    </body>
+    </html>
